@@ -1,6 +1,6 @@
 {
     "name": "Croissant Session Extender",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "description": "Extends your Office 365 Mail session automatically so that you will not get logged out after the duration set by the domain admin.",
     "permissions": [
         "tabs",
