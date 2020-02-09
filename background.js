@@ -21,7 +21,8 @@ function repeater() {
   console.log(Date());
   chrome.tabs.query({}, function(tabs) {
     for (let i = 0, tab; (tab = tabs[i]); i++) {
-      if (isMailURL(tab.url) && !tab.active) {
+      if (isMailURL(tab.url)) {
+        //&& !tab.active) {
         // chrome.tabs.executeScript(tab.id, { file: "utilities.js" });
         chrome.tabs.update(tab.id, {
           url: "https://outlook.office.com/mail/inbox"
@@ -34,7 +35,7 @@ function repeater() {
       }
     }
   });
-  setTimeout(repeater, 5000);
+  setTimeout(repeater, 240000);
 }
 
-setTimeout(repeater, 5000);
+setTimeout(repeater, 240000);
