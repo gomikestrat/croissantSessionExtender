@@ -8,13 +8,13 @@ chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
   }
 });
 
-chrome.webRequest.onBeforeRequest.addListener(
-  function (details) {
-    return { cancel: true };
-  },
-  { urls: ["*://browser.pipe.aria.microsoft.com/Collector/3.0/*"] },
-  ["blocking"]
-);
+// chrome.webRequest.onBeforeRequest.addListener(
+//   function (details) {
+//     return { cancel: true };
+//   },
+//   { urls: ["*://browser.pipe.aria.microsoft.com/Collector/3.0/*"] },
+//   ["blocking"]
+// );
 
 function getMailURL() {
   return "https://outlook.office.com/mail";
