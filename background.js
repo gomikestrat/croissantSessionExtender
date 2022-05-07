@@ -25,7 +25,7 @@ function isMailURL(url) {
 }
 
 function repeater() {
-  console.log("Happy croissant..");
+  console.log("Happy croissant...");
   console.log(Date());
   chrome.tabs.query({ active: false }, function (tabs) {
     for (let i = 0, tab; (tab = tabs[i]); i++) {
